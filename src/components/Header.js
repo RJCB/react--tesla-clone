@@ -27,7 +27,7 @@ function Header() {
                 </CloseWrapper>
                 <ul>
                     {sideMenuLinks.map((link, index) => {
-                        return <li><a key={index} href="#">{link}</a></li>
+                        return <li key={index}><a href="#">{link}</a></li>
                     })}
                 </ul>
             </BurgerNav>
