@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 //icons
 import { GrFormClose } from 'react-icons/gr'
-import Logo from "../images/logo.svg"
+import Logo from "../logo.svg"
 function Header() {
     const [sideMenuOpen, setSideMenuOpen] = useState(false);
     const cars = ["Model S", "Model 3", "Model X", "Model Y"];
