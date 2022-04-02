@@ -25,7 +25,7 @@ function Section({ title, description, backgroundImg, leftBtnText, rightBtnText 
                             </RightButton>
                         }
                     </Buttons>
-                    <DownArrow src="images/down-arrow.svg" />
+                    <DownArrow src="../images/down-arrow.svg" />
                 </ButtonGroup>
             </Fade>
         </Container>
@@ -37,7 +37,7 @@ export default Section;
 const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    background-image: ${(props) => `url("images/${props.bgImage}")`};//Container is a separate styled component, so prop must be pass into the Container as well
+    background-image: ${(props) => `url("../images/${props.bgImage}")`};//Container is a separate styled component, so prop must be pass into the Container as well
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

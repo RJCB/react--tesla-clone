@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 //icons
 import { GrFormClose } from 'react-icons/gr'
+import Logo from "../images/logo.svg"
 function Header() {
     const [sideMenuOpen, setSideMenuOpen] = useState(false);
     const cars = ["Model S", "Model 3", "Model X", "Model Y"];
     const sideMenuLinks = ["Existing Inventory", "Used Inventory", "Trade-in", "Cybertruck", "Roadster", "Powerwall", "Energy", "Charging"];
     return (
         <Container>
-            <a href="#" onClick={(e) => { e.preventDefault() }}><img src="/images/logo.svg" alt="logo" /></a>
+            <a href="#" onClick={(e) => { e.preventDefault() }}><img src={Logo} alt="logo" /></a>
             <Menu>
                 {cars.map((car, index) => {
                     return <a key={index} href="#">{car}</a>
